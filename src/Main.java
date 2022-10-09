@@ -58,27 +58,25 @@ public class Main {
         var boxer1Weight = 78.2;
         var boxer2Weight = 82.7;
         var totalWeight = boxer1Weight + boxer2Weight;
-        var diffWeight = boxer2Weight - boxer1Weight;
+        var diffWeight = boxer1Weight - boxer2Weight;
         System.out.println("Общий вес двух бойцов: " + totalWeight + " кг");
-        System.out.println("Разница между весами бойцов: " + diffWeight + " кг");
-        System.out.println("Общий вес двух бойцов: " + (boxer1Weight + boxer2Weight) + " кг");
-        System.out.println("Разница между весами бойцов: " + (boxer2Weight - boxer1Weight) + " кг");
+        System.out.println("Разница между весами бойцов: " + Math.abs(diffWeight) + " кг");
 
         //Задача 7
         System.out.println(" ");
         System.out.println("Задача 7");
-        System.out.println("Разница между весами бойцов (1 способ): " + (boxer2Weight - boxer1Weight) + " кг");
+        System.out.println("Разница между весами бойцов (1 способ): " + Math.abs(boxer1Weight - boxer2Weight) + " кг");
         System.out.println("Разница между весами бойцов (2 способ): " + (boxer2Weight % boxer1Weight) + " кг");
 
         //Задача 8
         System.out.println(" ");
         System.out.println("Задача 8");
-        var totalWorkingHours = 640; // часов работы поделено между сотрудниками
-        var hoursPerDay = 8;         // каждый сотрудник посвящает работе 8 часов
+        var totalWorkingHours = 640; // Всего часов работы поделено между сотрудниками
+        var hoursPerDay = 8;         // Каждый сотрудник посвящает работе 8 часов
         var totalWorker = totalWorkingHours / hoursPerDay;
         System.out.println("Всего работников в компании – " + totalWorker + " человек");
         totalWorker += 94;
-        totalWorkingHours=totalWorker*hoursPerDay;
+        totalWorkingHours = totalWorker * hoursPerDay;
         System.out.println("Если в компании работает " + totalWorker + " человек, то всего " + totalWorkingHours + " часов работы может быть поделено между сотрудниками");
 
     }
